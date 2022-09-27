@@ -1,0 +1,90 @@
+{
+  "manifest_version": 3,
+  "name": "Block Ads From YouTube 2022",
+  "version": "0.121",
+  "description": "Latest Ad Blocker it is the best ad blocker 2022",
+  "icons": {
+    "16": "icon-skip.png",
+    "32": "icon-skip.png",
+    "128": "icon-skip.png",
+    "256": "icon-skip.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon-skip.png",
+      "32": "icon-skip.png",
+      "128": "icon-skip.png",
+      "256": "icon-pro.skip"
+    },
+    "default_title": "Block Ads From YouTube 2022",
+    "default_popup": "home.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "filters/declarative/filter_1.json"
+      },
+      {
+        "id": "ruleset_13",
+        "enabled": true,
+        "path": "filters/declarative/filter_13.json"
+      },
+      {
+        "id": "ruleset_14",
+        "enabled": true,
+        "path": "filters/declarative/filter_14.json"
+      },
+      {
+        "id": "ruleset_16",
+        "enabled": true,
+        "path": "filters/declarative/filter_16.json"
+      },
+      {
+        "id": "ruleset_2",
+        "enabled": true,
+        "path": "filters/declarative/filter_2.json"
+      },
+      {
+        "id": "ruleset_224",
+        "enabled": true,
+        "path": "filters/declarative/filter_224.json"
+      },
+      {
+        "id": "ruleset_3",
+        "enabled": true,
+        "path": "filters/declarative/filter_3.json"
+      },
+      {
+        "id": "ruleset_4",
+        "enabled": true,
+        "path": "filters/declarative/filter_4.json"
+      },
+      {
+        "id": "ruleset_6",
+        "enabled": true,
+        "path": "filters/declarative/filter_6.json"
+      },
+      {
+        "id": "ruleset_8",
+        "enabled": true,
+        "path": "filters/declarative/filter_8.json"
+      }
+    ]
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "tabs",
+    "activeTab",
+    "scripting",
+    "tts",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "autoSkip.js"
+  }
+}
